@@ -62,6 +62,7 @@ class sqlserver(
   File { source_permissions => ignore }
 
   include stdlib
+  include firewall
 
   if ($::operatingsystem != 'Windows')
   {
